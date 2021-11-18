@@ -28,6 +28,10 @@ app.get("/", (req, res) => {
     rollbar.info("HTML file served successfully")
 })
 
+app.get("/js", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/client.js"))
+})
+
 const getCompliments = (req, res) => {
     console.log()
         const compliments = ["Gee, you're a cookie",
