@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 
 app.get("/js", (req, res) => {
     res.sendFile(path.join(__dirname, "../client/client.js"))
+    rollbar.info('JS file served successfully')
 })
 
 const getCompliments = (req, res) => {
