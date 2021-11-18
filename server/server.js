@@ -46,7 +46,7 @@ const getCompliments = (req, res) => {
     
   }
 
-app.get('api/compliment', getCompliments)
+app.get('/compliment', getCompliments)
 app.use(rollbar.errorHandler())
 
 
