@@ -7,5 +7,6 @@ document.getElementById("complimentButton").onclick = () => {
         .then((res) => {
           const data = res.data;
           alert(data);
+        
         })
     }
